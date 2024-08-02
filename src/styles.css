@@ -1,0 +1,132 @@
+/******w**************
+    
+    Assignment 4 Stylesheet
+    Name: Milan Cruz
+    Date: 28-06-2024
+    Description: Api Query for City of Winnipeg Building Permits
+
+*********************/
+
+
+:root {
+    --main-background-color: #D6EFFF; /* Light blue for overall page background */
+    --wrapper-background-color: #848F9A; /* Light gray for containers */
+    --text-color: #000; /* Black for text */
+    --border-color: #72195A;
+    --active-background-color: #f34213; /* Bright red for active elements */
+    --hover-background-color: #de9151; /* Light orange for hover states */
+    --item-background-color: #fff; /* White for item backgrounds */
+  
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+    font-weight: 400;
+  
+    color-scheme: light dark;
+    color: rgba(255, 255, 255, 0.87);
+    background-color: #242424;
+  
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 320px;
+    min-height: 100vh;
+  
+    text-align: center;
+    background-color: var(--main-background-color);
+    color: var(--text-color);
+    font-family: Arial, sans-serif;
+  }
+  
+  h1 {
+    font-size: 3.2em;
+    line-height: 1.1;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    max-width: 700px;
+    width: 100%;
+    padding: 20px;
+    border: 3px solid var(--border-color);
+    border-radius: 5px;
+    background-color: var(--wrapper-background-color);
+  }
+  
+  form {
+    display: grid;
+    gap: 10px;
+  }
+  
+  .results {
+    margin-top: 20px;
+  }
+  
+  .permit-item {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 3px solid var(--border-color);
+    border-radius: 5px;
+    background-color: var(--item-background-color); /* Using variable for item background */
+  }
+  
+  a {
+    font-weight: 500;
+    color: #646cff;
+    text-decoration: inherit;
+  }
+  
+  a:hover {
+    background-color: var(--hover-background-color); /* Using variable for hover background */
+    color: var(--text-color); /* Ensuring text color is visible on hover */
+  }
+  
+  a:active, button:active {
+    background-color: var(--active-background-color); /* Using variable for active background */
+    color: var(--text-color);
+  }
+  
+  button {
+    border-radius: 8px;
+    border: 1px solid transparent;
+    padding: 0.6em 1.2em;
+    font-size: 1em;
+    font-weight: 500;
+    font-family: inherit;
+    background-color: #1a1a1a;
+    cursor: pointer;
+    transition: border-color 0.25s;
+  }
+  
+  button:hover {
+    border-color: #646cff;
+  }
+  
+  button:focus,
+  button:focus-visible {
+    outline: 4px auto -webkit-focus-ring-color;
+  }
+  
+  @media (prefers-color-scheme: light) {
+    :root {
+      color: #213547;
+      background-color: #ffffff;
+    }
+  
+    a:hover {
+      color: #747bff;
+    }
+  
+    button {
+      background-color: #f9f9f9;
+    }
+  }
+  
